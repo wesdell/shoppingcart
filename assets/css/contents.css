@@ -1,0 +1,154 @@
+.content h2 {
+  text-align: center;
+  color: var(--beige);
+  text-transform: uppercase;
+}
+
+.product-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card img {
+  transform: translate(0%, 15%);
+}
+
+.product-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: rgba(107, 189, 153, .85);
+  color: var(--beige);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease-in;
+}
+
+.product-info h3, 
+.product-info p {
+  font-weight: bold;
+}
+
+.product-info > div {
+  padding: 1rem auto;
+  width: 100%;
+  height: 100%;
+}
+
+.product-card:hover .product-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s ease;
+  background-color: rgba(174, 207, 164, .5);
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: .5rem;
+  text-decoration: none;
+  right: 2rem;
+}
+
+.modal[id|="product"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-product {
+  padding: 1rem;
+  margin: 0 1rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: medium solid var(--white);
+  background-color: var(--secondary);
+}
+
+.modal-product h3 {
+  padding: .5rem 0;
+  margin: 1rem auto;
+  color: var(--beige);
+  border-bottom: medium solid var(--primary-light);
+}
+
+.modal-product img {
+  transform: translate(50%, 0%);
+}
+
+.modal-info h3, 
+.modal-info p {
+  color: var(--white);
+}
+
+.modal-details {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-auto-rows: 2rem;
+  margin-top: 1rem;
+}
+
+.modal-details small {
+  color: var(--white);
+}
+
+.modal-details strong {
+  color: var(--beige);
+}
+
+@media screen and (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 300px;
+    height: 100px;
+  }
+
+  .modal-product {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .modal-product img {
+    transform: translate(0%, 50%);
+  }
+
+  .modal-info {
+    margin-left: 1.5rem;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

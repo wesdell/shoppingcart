@@ -1,0 +1,19 @@
+.footer {
+  background-image: linear-gradient(var(--secondary), var(--terciary));
+  padding: 2rem 1rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+  padding: 0 1rem 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+  padding: 2rem 1rem;
+  margin: 0;
+  }
+}

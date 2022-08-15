@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAcart | Sebastian Guerrero</title>
+  <meta name="description" content="Shopping cart inspired by Latin culture. Enjoy it.">
+  <link rel="canonical" href="https://wesdell.github.io/shoppingcart/">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/carrousel.css">
+  <link rel="stylesheet" href="./assets/css/contents.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/utilities.css">
+  <link rel="icon" href="https://wesdell.github.io/shoppingcart/./assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="https://wesdell.github.io/shoppingcart/./assets/img/favicon.png">
+  <meta name="theme-color" content="#AECFA4">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" name="twitter:title" content="LAcart | Sebastian Guerrero">
+  <meta property="og:image" name="twitter:image" content="https://wesdell.github.io/shoppingcart/./assets/img/pinata.png">
+  <meta property="og:url" name="twitter:url" content="https://wesdell.github.io/shoppingcart/">
+  <meta property="og:description" name="twitter:description" content="Shopping cart inspired by Latin culture. Enjoy it.">
+  <meta property="og:type" content="website">
+</head>
+<body>
+  <header class="header">
+    <div class="navbar container">
+      <div class="navbar-name">
+        <h1>LA<small>cart</small></h1>
+      </div>
+      <div class="navbar-car">
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg><button disabled>0</button></a>
+      </div>
+    </div>
+  </header>
+  <section class="carrousel">
+    <input type="radio" name="slides" id="slide-1" checked>
+    <input type="radio" name="slides" id="slide-2">
+    <input type="radio" name="slides" id="slide-3">
+    <ul class="slides">
+      <li class="slide">
+        <img class="product" src="./assets/img/pinata.png" alt="pinata image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dolores. Unde, hic voluptatibus. Totam alias nesciunt ullam! Rem reiciendis delectus velit dolorem sunt, quo et, vitae aliquam mollitia, tempora perspiciatis?</p>
+      </li>
+      <li class="slide">
+        <img class="product" src="./assets/img/guitarra.png" alt="guitar image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero unde reiciendis harum ut quisquam doloribus eos ipsam quos neque necessitatibus nobis veniam aut, natus facere voluptatum optio? Quaerat!</p>
+      </li>
+      <li class="slide">
+        <img class="product" src="./assets/img/nachos.png" alt="nachos image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in minus sequi quos sapiente illo sint fugiat rem blanditiis voluptas. Consequatur nobis modi velit consequuntur animi obcaecati illum excepturi debitis.</p>
+      </li>
+    </ul>
+    <aside class="slides-nav">
+      <label for="slide-1" id="point-1"></label>
+      <label for="slide-2" id="point-2"></label>
+      <label for="slide-3" id="point-3"></label>
+    </aside>
+  </section>
+  <hr>
+  <section class="content">
+    <div class="container">
+      <h2>Products</h2>
+      <div class="container-cards">
+        <div class="card">
+          <a href="#product-1" class="product-card">
+            <img class="product" src="./assets/img/guitarra.png" alt="guitar image">
+            <aside class="product-info">
+              <div>
+                <h3>Guitars</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus nesciunt accusantium eius sed facere aut adipisci architecto repellendus fugiat autem at dicta similique voluptatem porro dolorum fugit, provident dolor quasi.</p>
+              </div>
+            </aside>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#product-2" class="product-card">
+            <img class="product" src="./assets/img/maracas.png" alt="maracas image">
+            <aside class="product-info">
+              <div>
+                <h3>Maracas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reprehenderit quia et quod ea, nesciunt autem neque tenetur nobis nam fuga libero repellendus iste molestias aperiam sequi laborum fugiat! Minus!</p>
+              </div>
+            </aside>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#product-3" class="product-card">
+            <img class="product" src="./assets/img/nachos.png" alt="nachos image">
+            <aside class="product-info">
+              <div>
+                <h3>Nachos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolores, accusamus quod facilis debitis expedita voluptas unde temporibus nisi? Officiis quis illo earum nobis aut autem ullam eveniet fugit labore.</p>
+              </div>
+            </aside>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#product-4" class="product-card">
+            <img class="product" src="./assets/img/pinata.png" alt="pinata image">
+            <aside class="product-info">
+              <div>
+                <h3>Pinatas</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, accusamus maxime incidunt nisi quod reiciendis est molestias corporis optio consequuntur, dolorem odit. Quisquam voluptatem amet doloribus animi harum veritatis totam!</p>
+              </div>
+            </aside>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#product-5" class="product-card">
+            <img class="product" src="./assets/img/poncho.png" alt="poncho image">
+            <aside class="product-info">
+              <div>
+                <h3>Ponchos</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In id possimus quae sapiente eos minus impedit, reprehenderit sunt praesentium beatae deserunt quasi quis error veniam odio dolorem sint vitae consequuntur!</p>
+              </div>
+            </aside>
+          </a>
+        </div>
+        <div class="card">
+          <a href="#product-6" class="product-card">
+            <img class="product" src="./assets/img/tacos.png" alt="tacos image">
+            <aside class="product-info">
+              <div>
+                <h3>Tacos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae consequatur accusamus illum officia inventore. Repellat soluta delectus quam repellendus ipsa eum, quibusdam libero error dicta eligendi corrupti nulla obcaecati asperiores!</p>
+              </div>
+            </aside>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <article class="modal" id="product-1">
+    <div class="modal-content">
+      <a class="modal-close" href="#close">✖</a>
+      <article class="modal-product">
+        <img class="product" src="./assets/img/guitarra.png" alt="guitar image">
+        <div class="modal-info">
+          <h3>Guitar</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad asperiores minus nihil eligendi, totam eum nam cum fugiat ea, aperiam perspiciatis ab tempora sunt excepturi laborum accusantium beatae atque!</p>
+          <aside class="modal-details">
+            <small><strong>Model name: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Color: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Brand: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Size: </strong></small>
+            <small>XXXXXXX</small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="product-2">
+    <div class="modal-content">
+      <a class="modal-close" href="#close">✖</a>
+      <article class="modal-product">
+        <img class="product" src="./assets/img/maracas.png" alt="maracas image">
+        <div class="modal-info">
+          <h3>Maracas</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad asperiores minus nihil eligendi, totam eum nam cum fugiat ea, aperiam perspiciatis ab tempora sunt excepturi laborum accusantium beatae atque!</p>
+          <aside class="modal-details">
+            <small><strong>Model name: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Color: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Brand: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Size: </strong></small>
+            <small>XXXXXXX</small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="product-3">
+    <div class="modal-content">
+      <a class="modal-close" href="#close">✖</a>
+      <article class="modal-product">
+        <img class="product" src="./assets/img/nachos.png" alt="nachos image">
+        <div class="modal-info">
+          <h3>Nachos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad asperiores minus nihil eligendi, totam eum nam cum fugiat ea, aperiam perspiciatis ab tempora sunt excepturi laborum accusantium beatae atque!</p>
+          <aside class="modal-details">
+            <small><strong>Model name: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Color: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Brand: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Size: </strong></small>
+            <small>XXXXXXX</small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="product-4">
+    <div class="modal-content">
+      <a class="modal-close" href="#close">✖</a>
+      <article class="modal-product">
+        <img class="product" src="./assets/img/pinata.png" alt="pinata image">
+        <div class="modal-info">
+          <h3>Pinata</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad asperiores minus nihil eligendi, totam eum nam cum fugiat ea, aperiam perspiciatis ab tempora sunt excepturi laborum accusantium beatae atque!</p>
+          <aside class="modal-details">
+            <small><strong>Model name: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Color: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Brand: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Size: </strong></small>
+            <small>XXXXXXX</small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="product-5">
+    <div class="modal-content">
+      <a class="modal-close" href="#close">✖</a>
+      <article class="modal-product">
+        <img class="product" src="./assets/img/poncho.png" alt="poncho image">
+        <div class="modal-info">
+          <h3>Poncho</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad asperiores minus nihil eligendi, totam eum nam cum fugiat ea, aperiam perspiciatis ab tempora sunt excepturi laborum accusantium beatae atque!</p>
+          <aside class="modal-details">
+            <small><strong>Model name: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Color: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Brand: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Size: </strong></small>
+            <small>XXXXXXX</small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="product-6">
+    <div class="modal-content">
+      <a class="modal-close" href="#close">✖</a>
+      <article class="modal-product">
+        <img class="product" src="./assets/img/tacos.png" alt="tacos image">
+        <div class="modal-info">
+          <h3>Tacos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ad asperiores minus nihil eligendi, totam eum nam cum fugiat ea, aperiam perspiciatis ab tempora sunt excepturi laborum accusantium beatae atque!</p>
+          <aside class="modal-details">
+            <small><strong>Model name: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Color: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Brand: </strong></small>
+            <small>XXXXXXX</small>
+            <small><strong>Size: </strong></small>
+            <small>XXXXXXX</small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <footer class="footer">
+    <small>Developed and designed by Edwin Sebastián Guerrero Pesántez. &copy; 2022. All rights reserved.</small>
+        <small><a href="https://www.flaticon.es/iconos-gratis/html" target="_blank" title="html iconos">Html iconos creados por Freepik - Flaticon</a></small>
+</footer>
+</body>
+</html>
